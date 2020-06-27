@@ -6,9 +6,7 @@ The purpose of the project was to create a dynamic webpage about UFO sightings u
 Additional bootstrap elements were included such as table formatting (including hover-over effect), button formatting (including the navigation bar), the addition of a "Return To The Top" button at the bottom of the web page, and text formatting. 
 
 #### Screenshot Of Web Page
-![webPageScreenshot](webPageScreenshot)
-
-See <[index.html](index.html)> to view the web page.
+![webPageScreenshot.png](webPageScreenshot.png)
 
 ## Resources
 - Software: JavaScript, HTML5, CSS3, and Bootstrap 4.0.0
