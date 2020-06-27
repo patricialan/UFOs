@@ -1,3 +1,9 @@
+# Files to ignore that I added 
+indexOriginal.html
+static/js/appOriginal.js
+static/js/pseudoCode.js
+static/js/starterCode.js
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
