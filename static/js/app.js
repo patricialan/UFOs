@@ -36,11 +36,11 @@ var filters = {
 function updateFilters() {
 
   // Save the element, value, and id of the filter that was changed
-  var dateFilter = d3.select("#datetime").property("value");
-  var cityFilter = d3.select("#city").property("value");
-  var stateFilter = d3.select("#state").property("value");
-  var countryFilter = d3.select("#country").property("value");
-  var shapeFilter = d3.select("#shape").property("value");
+  let dateFilter = d3.select("#datetime").property("value");
+  let cityFilter = d3.select("#city").property("value");
+  let stateFilter = d3.select("#state").property("value");
+  let countryFilter = d3.select("#country").property("value");
+  let shapeFilter = d3.select("#shape").property("value");
 
   // If a filter value was entered then add that filterId and value
   // to the filters list. Otherwise, clear that filter from the filters object
@@ -79,19 +79,23 @@ function filterTable() {
 
   // Loop through all of the filters and keep any data that
   // matches the filter values
-  Object.values(filters).forEach((value) => {
-      filteredData = filteredData.filter(
-      
-      // function to loop through keys in dict 'row'
-      function match(row) {
-        // Make list of keys
-        var keys = Object.keys(row);
-        for (var key of keys) {
-          row.key === value;
-        } 
-      }
+  Object.keys(filters).forEach((key) => {
 
-      );
+        if (key === "datetime") {
+          filteredData = filteredData.filter(row => row.datetime === filters[key]);
+        }
+        if (key === "city") {
+          filteredData = filteredData.filter(row => row.city === filters[key]);
+        }
+        if (key === "state") {
+          filteredData = filteredData.filter(row => row.state === filters[key]);
+        }
+        if (key === "country") {
+          filteredData = filteredData.filter(row => row.country === filters[key]);
+        }
+        if (key === "shape") {
+          filteredData = filteredData.filter(row => row.shape === filters[key]);
+        }
   });
 
   // Finally, rebuild the table using the filtered Data
@@ -99,7 +103,6 @@ function filterTable() {
 }
 
 // Attach an event to listen for changes to each filter
-// Hint: You'll need to select the event and what it is listening for within each set of parenthesis
 d3.selectAll("#filter-btn").on("click", updateFilters);
 
 // Build the table when the page loads

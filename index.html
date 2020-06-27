@@ -17,7 +17,9 @@
 
         <!--Navigation Bar-->
         <nav class="navbar navbar-dark navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">UFO Sightings</a>
+            <a class="navbar-brand" href="index.html">
+                <button type="button" class="btn btn-outline-light">Reset Page</button>
+            </a>
         </nav>
 
         <!--Jumbotron-->
@@ -28,8 +30,8 @@
         <!--Article-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <h3>UFO Sightings: Fact or Fancy?
+                <div class="col-md-4 text-center">
+                    <h3>UFO Sightings: Fact or Fancy?<br>
                         <small>Ufologists Weigh In</small>
                     </h3>
                 </div>
@@ -50,31 +52,31 @@
 
                 <!--Filter-->
                 <div class="col-md-3">
-                    <form class="bg-dark text-center">
-                        <p>Filter Search</p>
+                    <form class="bg-dark">
+                        <h5 class="text-center">Filter Search</h5>
                         <ul class="list-group">
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter Date</label>
+                            <li class="list-group-item bg-dark text-right">
+                                <label for="dateFilter">Date</label>
                                 <input type="text" placeholder="1/1/2010" id="datetime"/>
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter City</label>
+                            <li class="list-group-item bg-dark text-right">
+                                <label for="cityFilter">City</label>
                                 <input type="text" placeholder="benton" id="city"/>
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter State</label>
+                            <li class="list-group-item bg-dark text-right">
+                                <label for="stateFilter">State</label>
                                 <input type="text" placeholder="ar" id="state"/>
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter Country</label>
+                            <li class="list-group-item bg-dark text-right">
+                                <label for="countryFilter">Country</label>
                                 <input type="text" placeholder="us" id="country"/>
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <label for="date">Enter Shape</label>
+                            <li class="list-group-item bg-dark text-right">
+                                <label for="shapeFilter">Shape</label>
                                 <input type="text" placeholder="circle" id="shape"/>
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                            <li class="list-group-item bg-dark text-center">
+                                <button id="filter-btn" type="button" class="btn btn-outline-light">Filter Table</button>
                             </li>
                         </ul>
                     </form>
@@ -82,8 +84,8 @@
 
                 <!--Table-->
                 <div class="col-md-9">
-                   <table class="table table-striped">
-                       <thead>
+                   <table class="table table-striped table-dark table-hover">
+                       <thead class="text-center">
                            <tr>
                                <th>Date</th>
                                <th>City</th>
@@ -98,6 +100,17 @@
                    </table>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- Button: Return To Top -->
+        <div class="container">
+            <div class="row">
+                <div class="col text-center m-3 pb-4">
+                    <a id="back-to-top" href="#">
+                        <button type="button" class="btn btn-outline-light">Return To The Top</button>
+                    </a>
+                </div>
             </div>
         </div>
 
