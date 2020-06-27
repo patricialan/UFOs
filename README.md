@@ -5,12 +5,16 @@ The purpose of the project was to create a dynamic webpage about UFO sightings u
 
 Additional bootstrap elements were included such as table formatting (including hover-over effect), button formatting (including the navigation bar), the addition of a "Return To The Top" button at the bottom of the web page, and text formatting. 
 
+#### Screenshot Of Web Page
+![webPageScreenshot](webPageScreenshot)
+
+See <[index.html](index.html)> to view the web page.
+
 ## Resources
 - Software: JavaScript, HTML5, CSS3, and Bootstrap 4.0.0
 - Data: <[data.js](static/js/data.js)> (UFO sightings data)
 
 ## Recommendation For Further Development
-Recommendations are as follows:
 1) More UFO sightings data could be included, especially with regard to dates and countries. The file "data.js" only provides data for January 2010 and for the United States. 
 
 2) Duration data could be "cleaned" in the file "data.js". Multiple formats were used to record duration of sightings. Standardizing the format would make the data easier to search so that a "duration" table filter could be created.
