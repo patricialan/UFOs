@@ -1,4 +1,4 @@
-# UFOs
+# UFO Sightings
 
 ## Project Overview
 The purpose of the project was to create a dynamic webpage about UFO sightings using JavaScript and HTML. The webpage included a table where table contents could be filtered by date, city, state, country, and shape. Bootstrap and CSS were used to style the webpage. 
